@@ -1,0 +1,390 @@
+.home {
+  min-height: 100vh;
+  border-top: #f3ee6a 4px solid;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #0891b2 0%, #0e7490 100%);
+  padding: clamp(3rem, 8vw, 5rem) clamp(1rem, 3vw, 1.5rem)
+    clamp(2.5rem, 6vw, 3.75rem);
+  text-align: center;
+  color: white;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto 60px;
+}
+
+.hero-title {
+  font-size: clamp(2rem, 6vw, 3rem);
+  font-weight: 800;
+  background: linear-gradient(135deg, #0891b2 0%, #0e7490 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  margin: 0 0 clamp(1rem, 2vw, 1.25rem) 0;
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  margin: 0 0 clamp(2rem, 4vw, 2.5rem) 0;
+  opacity: 0.95;
+  line-height: 1.6;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-flight-search {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Flight Search Section */
+.flight-search-section {
+  padding: 60px 0;
+  background: linear-gradient(180deg, #0d9488 0%, #14b8a6 100%);
+}
+
+/* Section Styles */
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-label {
+  color: #667eea;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-size: 46px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #0891b2 0%, #0e7490 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  margin: 12px 0;
+}
+
+.section-description {
+  color: #4a5568;
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.section-cta {
+  margin-top: 48px;
+  text-align: center;
+}
+
+/* Tours Section */
+.tours-section {
+  padding: 80px 0;
+  background: #f7fafc;
+}
+
+.tours-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 32px;
+}
+
+/* Services Section */
+.services-section {
+  padding: 80px 0;
+  background: white;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+}
+
+/* Stats Section */
+.stats-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #0891b2 0%, #0e7490 100%);
+  color: white;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  text-align: center;
+}
+
+.stat-card {
+  padding: 20px;
+}
+
+.stat-value {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.stat-label {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* CTA Section */
+.cta-section {
+  padding: 80px 0;
+  background: #f7fafc;
+}
+
+.cta-content {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.cta-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: #2d3748;
+  margin: 0 0 16px 0;
+}
+
+.cta-description {
+  font-size: 18px;
+  color: #4a5568;
+  margin: 0 0 32px 0;
+}
+
+/* Responsive */
+/* Large tablets */
+@media (max-width: 1200px) {
+  .tours-section,
+  .services-section,
+  .stats-section,
+  .cta-section {
+    padding: 70px 0;
+  }
+
+  .section-header {
+    margin-bottom: 50px;
+  }
+
+  .tours-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 28px;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 28px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .hero {
+    padding: 4.5rem 1.5rem 3.5rem;
+  }
+
+  .hero-content {
+    margin-bottom: 50px;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.125rem;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .section-description {
+    font-size: 17px;
+  }
+
+  .tours-section,
+  .services-section,
+  .stats-section,
+  .cta-section {
+    padding: 60px 0;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .hero {
+    padding: 4rem 1.25rem 3rem;
+  }
+
+  .hero-content {
+    margin-bottom: 40px;
+  }
+
+  .hero-title {
+    font-size: 2.25rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.0625rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .hero-actions > * {
+    width: 100%;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .section-description {
+    font-size: 16px;
+  }
+
+  .section-header {
+    margin-bottom: 40px;
+  }
+
+  .tours-grid,
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .stat-value {
+    font-size: 36px;
+  }
+
+  .stat-label {
+    font-size: 15px;
+  }
+
+  .tours-section,
+  .services-section,
+  .stats-section,
+  .cta-section {
+    padding: 50px 0;
+  }
+
+  .flight-search-section {
+    padding: 50px 0;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .hero {
+    padding: 3.5rem 1rem 2.5rem;
+  }
+
+  .hero-content {
+    margin-bottom: 35px;
+  }
+
+  .hero-title {
+    font-size: 1.875rem;
+    margin-bottom: 0.875rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .section-label {
+    font-size: 13px;
+  }
+
+  .section-title {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+
+  .section-description {
+    font-size: 15px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .stat-value {
+    font-size: 32px;
+  }
+
+  .stat-card {
+    padding: 16px;
+  }
+
+  .cta-content {
+    padding: 0 1rem;
+  }
+
+  .cta-title {
+    font-size: 28px;
+  }
+
+  .cta-description {
+    font-size: 16px;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 360px) {
+  .hero-title {
+    font-size: 1.625rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.9375rem;
+  }
+
+  .section-title {
+    font-size: 22px;
+  }
+
+  .stat-value {
+    font-size: 28px;
+  }
+
+  .stat-label {
+    font-size: 14px;
+  }
+}

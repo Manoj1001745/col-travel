@@ -1,0 +1,286 @@
+.footer {
+  background: #1a202c;
+  color: white;
+  padding: 60px 0 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  padding-bottom: 40px;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-logo .logo-icon {
+  font-size: 32px;
+}
+
+.footer-logo .logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.footer-logo .logo-main {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+
+.footer-logo .logo-sub {
+  font-size: 12px;
+  color: #a0aec0;
+  font-weight: 600;
+}
+
+.footer-description {
+  color: #a0aec0;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.footer-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+  color: white;
+}
+
+.footer-links,
+.footer-contact {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-links a {
+  color: #a0aec0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #667eea;
+}
+
+.footer-contact li {
+  color: #a0aec0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #2d3748;
+  padding: 24px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  color: #a0aec0;
+}
+
+.footer-bottom-links {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-bottom-links a {
+  color: #a0aec0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom-links a:hover {
+  color: #667eea;
+}
+
+/* Responsive Footer Styles */
+/* Tablets */
+@media (max-width: 1024px) {
+  .footer {
+    padding: 55px 0 0;
+  }
+
+  .footer-container {
+    padding: 0 20px;
+  }
+
+  .footer-content {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 36px;
+    padding-bottom: 36px;
+  }
+
+  .footer-title {
+    font-size: 17px;
+  }
+
+  .footer-bottom {
+    padding: 22px 0;
+    gap: 14px;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 0 0;
+  }
+
+  .footer-container {
+    padding: 0 18px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding-bottom: 32px;
+  }
+
+  .footer-section {
+    gap: 14px;
+  }
+
+  .footer-logo {
+    gap: 10px;
+  }
+
+  .footer-logo .logo-icon {
+    font-size: 28px;
+  }
+
+  .footer-logo .logo-main {
+    font-size: 18px;
+  }
+
+  .footer-logo .logo-sub {
+    font-size: 11px;
+  }
+
+  .footer-description {
+    font-size: 15px;
+  }
+
+  .footer-title {
+    font-size: 17px;
+  }
+
+  .footer-links,
+  .footer-contact {
+    gap: 10px;
+  }
+
+  .footer-links a,
+  .footer-contact li {
+    font-size: 15px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+    gap: 16px;
+  }
+
+  .footer-bottom p {
+    font-size: 14px;
+  }
+
+  .footer-bottom-links {
+    gap: 20px;
+  }
+
+  .footer-bottom-links a {
+    font-size: 14px;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .footer {
+    padding: 35px 0 0;
+  }
+
+  .footer-container {
+    padding: 0 16px;
+  }
+
+  .footer-content {
+    gap: 28px;
+    padding-bottom: 28px;
+  }
+
+  .footer-section {
+    gap: 12px;
+  }
+
+  .footer-logo .logo-icon {
+    font-size: 26px;
+  }
+
+  .footer-logo .logo-main {
+    font-size: 17px;
+  }
+
+  .footer-logo .logo-sub {
+    font-size: 10px;
+  }
+
+  .footer-description {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .footer-title {
+    font-size: 16px;
+  }
+
+  .footer-links a,
+  .footer-contact li {
+    font-size: 14px;
+  }
+
+  .footer-bottom {
+    padding: 18px 0;
+  }
+
+  .footer-bottom p {
+    font-size: 13px;
+  }
+
+  .footer-bottom-links {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .footer-bottom-links a {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,81 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 clamp(1rem, 3vw, 1.5rem);
+  width: 100%;
+}
+
+.page-hero {
+  background: linear-gradient(135deg, #0891b2 0%, #0e7490 100%);
+  padding: clamp(3rem, 8vw, 5rem) clamp(1rem, 3vw, 1.5rem)
+    clamp(2.5rem, 6vw, 3.75rem);
+  text-align: center;
+  color: white;
+}
+
+.page-hero h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 800;
+  margin: 0 0 1rem 0;
+  line-height: 1.2;
+}
+
+.page-hero p {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  opacity: 0.95;
+  margin: 0;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Tablet devices */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 1.25rem;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .page-hero {
+    padding: 3.75rem 1rem 2.5rem;
+  }
+
+  .page-hero h1 {
+    font-size: 2rem;
+  }
+
+  .page-hero p {
+    font-size: 1rem;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .page-hero {
+    padding: 3rem 1rem 2rem;
+  }
+
+  .page-hero h1 {
+    font-size: 1.75rem;
+  }
+
+  .page-hero p {
+    font-size: 0.9375rem;
+  }
+}

@@ -1,0 +1,542 @@
+.tour-detail {
+  min-height: 100vh;
+  border-top: #f3ee6a 4px solid;
+}
+
+.tour-detail-not-found {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.tour-detail-not-found button {
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #0891b2 0%, #0e7490 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.tour-detail-not-found button:hover {
+  transform: translateY(-2px);
+}
+
+.tour-detail-hero {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+
+.tour-detail-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tour-detail-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+  display: flex;
+  align-items: flex-end;
+  padding: 40px 0;
+  color: white;
+}
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 24px;
+}
+
+.back-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.back-button .icon {
+  width: 20px;
+  height: 20px;
+}
+
+.tour-detail-overlay h1 {
+  font-size: 48px;
+  font-weight: 800;
+  margin: 0 0 16px 0;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.tour-detail-meta {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.country-badge {
+  background: rgba(102, 126, 234, 0.9);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.rating .icon {
+  width: 20px;
+  height: 20px;
+  fill: #fbbf24;
+  color: #fbbf24;
+}
+
+.rating .reviews {
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+.tour-detail-content {
+  padding: 60px 0;
+  background: #f7fafc;
+}
+
+.tour-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 40px;
+}
+
+.tour-detail-main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.tour-section {
+  background: white;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tour-section h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2d3748;
+  margin: 0 0 20px 0;
+}
+
+.tour-section p {
+  color: #4a5568;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.highlights-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.highlights-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #2d3748;
+  font-weight: 500;
+}
+
+.highlights-list .icon {
+  width: 20px;
+  height: 20px;
+  color: #667eea;
+  flex-shrink: 0;
+}
+
+.tour-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px;
+  background: #f7fafc;
+  border-radius: 8px;
+}
+
+.info-item .icon {
+  width: 24px;
+  height: 24px;
+  color: #667eea;
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+
+.info-item h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #718096;
+  margin: 0 0 4px 0;
+}
+
+.info-item p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2d3748;
+  margin: 0;
+}
+
+.tour-detail-sidebar {
+  position: sticky;
+  top: 100px;
+  height: fit-content;
+}
+
+.booking-card {
+  background: white;
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.price-section {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.price-label {
+  font-size: 14px;
+  color: #718096;
+}
+
+.price-value {
+  font-size: 40px;
+  font-weight: 800;
+  color: #667eea;
+}
+
+.price-note {
+  font-size: 14px;
+  color: #718096;
+}
+
+.book-now-button,
+.contact-button {
+  padding: 16px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.book-now-button {
+  background: linear-gradient(135deg, #0891b2 0%, #0e7490 100%);
+  color: white;
+}
+
+.book-now-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+.contact-button {
+  background: white;
+  color: #667eea;
+  border: 2px solid #667eea;
+}
+
+.contact-button:hover {
+  background: #f7fafc;
+}
+
+/* Tablets */
+@media (max-width: 1200px) {
+  .tour-detail-hero {
+    height: 450px;
+  }
+
+  .tour-detail-overlay h1 {
+    font-size: 42px;
+  }
+
+  .tour-detail-grid {
+    grid-template-columns: 1fr 360px;
+    gap: 32px;
+  }
+
+  .tour-detail-content {
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .tour-detail-hero {
+    height: 420px;
+  }
+
+  .tour-detail-overlay h1 {
+    font-size: 38px;
+  }
+
+  .tour-detail-grid {
+    grid-template-columns: 1fr 340px;
+    gap: 28px;
+  }
+
+  .tour-section h2 {
+    font-size: 26px;
+  }
+
+  .booking-card {
+    padding: 28px;
+  }
+}
+
+@media (max-width: 968px) {
+  .tour-detail-hero {
+    height: 400px;
+  }
+
+  .tour-detail-overlay h1 {
+    font-size: 36px;
+  }
+
+  .tour-detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tour-detail-sidebar {
+    position: static;
+  }
+
+  .booking-card {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .tour-detail-hero {
+    height: 380px;
+  }
+
+  .tour-detail-overlay {
+    padding: 32px 0;
+  }
+
+  .tour-detail-overlay h1 {
+    font-size: 32px;
+    margin-bottom: 12px;
+  }
+
+  .back-button {
+    padding: 8px 16px;
+    font-size: 0.9375rem;
+    margin-bottom: 20px;
+  }
+
+  .tour-detail-meta {
+    gap: 16px;
+  }
+
+  .country-badge {
+    font-size: 13px;
+    padding: 6px 14px;
+  }
+
+  .rating {
+    font-size: 15px;
+  }
+
+  .tour-detail-content {
+    padding: 40px 0;
+  }
+
+  .tour-detail-main {
+    gap: 32px;
+  }
+
+  .tour-section {
+    padding: 24px 20px;
+  }
+
+  .tour-section h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .tour-section p {
+    font-size: 15px;
+  }
+
+  .highlights-list {
+    gap: 14px;
+  }
+
+  .highlights-list li {
+    font-size: 15px;
+  }
+
+  .tour-info-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .info-item {
+    padding: 16px;
+  }
+
+  .booking-card {
+    padding: 24px 20px;
+    gap: 20px;
+  }
+
+  .price-section {
+    padding-bottom: 20px;
+  }
+
+  .price-value {
+    font-size: 32px;
+  }
+
+  .book-now-button,
+  .contact-button {
+    padding: 14px 20px;
+    font-size: 15px;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .tour-detail-hero {
+    height: 320px;
+  }
+
+  .tour-detail-overlay {
+    padding: 24px 0;
+  }
+
+  .tour-detail-overlay h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .back-button {
+    padding: 7px 14px;
+    font-size: 0.875rem;
+    margin-bottom: 16px;
+  }
+
+  .tour-detail-meta {
+    gap: 12px;
+    font-size: 14px;
+  }
+
+  .country-badge {
+    font-size: 12px;
+    padding: 5px 12px;
+  }
+
+  .rating {
+    font-size: 14px;
+  }
+
+  .tour-detail-content {
+    padding: 35px 0;
+  }
+
+  .tour-detail-main {
+    gap: 28px;
+  }
+
+  .tour-section {
+    padding: 20px 16px;
+  }
+
+  .tour-section h2 {
+    font-size: 22px;
+  }
+
+  .tour-section p {
+    font-size: 14px;
+  }
+
+  .highlights-list li {
+    font-size: 14px;
+  }
+
+  .info-item {
+    padding: 14px;
+    gap: 12px;
+  }
+
+  .info-item h4 {
+    font-size: 13px;
+  }
+
+  .info-item p {
+    font-size: 15px;
+  }
+
+  .booking-card {
+    padding: 20px 16px;
+    gap: 18px;
+  }
+
+  .price-value {
+    font-size: 28px;
+  }
+
+  .price-label,
+  .price-note {
+    font-size: 13px;
+  }
+
+  .book-now-button,
+  .contact-button {
+    padding: 12px 18px;
+    font-size: 14px;
+  }
+}
