@@ -25,7 +25,7 @@ const TopHeader: React.FC = () => {
         <div className="top-header-right">
           <a href="tel:+97714002016" className="top-header-item">
             <Phone className="icon" />
-            <span>+977-1-4002016/17/18</span>
+            <span>+977-9743434322</span>
           </a>
           <a href="tel:+9779851110341" className="top-header-item">
             <Phone className="icon" />
@@ -33,7 +33,7 @@ const TopHeader: React.FC = () => {
           </a>
           <a href="mailto:info@rajshreetravels.com" className="top-header-item">
             <Mail className="icon" />
-            <span>info@rajshreetravels.com</span>
+            <span>info@col-travel.com</span>
           </a>
         </div>
       </div>
