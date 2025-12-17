@@ -55,7 +55,7 @@ const TourPackages: React.FC = () => {
     if (priceRange !== "all") {
       const range = priceRanges.find((r) => r.id === priceRange);
       if (range) {
-        const tourPrice = parseInt(tour.price.replace(/[^0-9]/g, ""));
+        const tourPrice = tour.price;
         if (range.max && tourPrice > range.max) return false;
         if (range.min && tourPrice < range.min) return false;
       }
@@ -190,7 +190,7 @@ const TourPackages: React.FC = () => {
                   <div className="package-details">
                     <div className="detail-item">
                       <MapPin size={16} />
-                      <span>{tour.location}</span>
+                      <span>{tour.country}</span>
                     </div>
                     <div className="detail-item">
                       <Calendar size={16} />
